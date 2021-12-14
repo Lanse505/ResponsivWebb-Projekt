@@ -1,0 +1,22 @@
+
+
+
+
+
+@media screen and (min-width: 750px) and (max-width:999px) {
+    
+}
+@media screen and (min-width: 1000px) {
+    .grid-2x2 {
+        display: grid;
+        grid-template-columns: repeat(2, calc(100% / 2 - 1rem));
+        grid-template-rows: repeat(2, calc(100% / 2 - 1rem));
+        grid-gap: 1rem;
+        grid-template-areas: 
+          "first second"
+          "third fourth"
+    }
+    
+    
+}
+

@@ -1,9 +1,14 @@
 .card{
-    margin: 2rem 0 ;
+    margin: 2rem 0;
     background-color: whitesmoke;
     border-radius: 1rem;
     overflow: hidden;
+    position: relative;
     
+}
+@media screen and (min-width:1000px){
+   .card {margin: 0 0;
+   }
 }
 div.card .btn--blue {
     background-color: hsl(var(--hue-1), 50%, 50%)
@@ -17,12 +22,9 @@ div.card .btn--green {
     background-color: hsl(var(--hue-4), 50%, 40%)
 
 }
-.card__heading {
-    background-color: hsl(var(--hue-4), 50%, 40%)
 
-}
 div.card div.card__heading {
-    background-color: hsl(var(--hue-1), 50%, 40%) !important;
+    background-color: hsl(var(--hue-1), 50%, 40%) ;
 
 }
 div.card--success div.card__heading {
@@ -33,3 +35,67 @@ div.card--danger div.card__heading {
     background-color: hsl(var(--hue-3), 50%, 50%) !important;
 
 }
+.card__heading {
+    padding: 3rem 0 1rem 1rem;
+    
+}
+.card__text {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+.btn--circle {
+    position: absolute;
+    transform: translate(420%, -50%);
+
+}
+div.card p {
+    padding-left: 0.5rem;
+}
+.card__button {
+    text-transform: capitalize;
+    
+    
+}
+/* div.card .btn-blue {
+
+}
+
+div.card .btn-red {
+
+}
+
+div.card .btn-green {
+
+} */
+
+/*
+ * Top-level Modifiers hamnar senare i Cascaden så den "overridar" bas variablens färger
+ *
+ * Success
+ */
+/* div.card--success .btn-blue {
+
+}
+
+div.card--success .btn-red {
+  
+}
+
+div.card--success .btn-green {
+  
+} */
+
+/*
+ * Danger
+ */
+/* div.card--danger .btn-blue {
+  
+}
+
+div.card--danger .btn-red {
+  
+}
+
+div.card--danger .btn-green {
+  
+} */

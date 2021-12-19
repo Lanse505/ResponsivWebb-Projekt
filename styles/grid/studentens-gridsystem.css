@@ -1,11 +1,11 @@
-
-
-
-
-
+/* Grid-Layout >= 750px && <= 999px */
 @media screen and (min-width: 750px) and (max-width:999px) {
     
 }
+
+
+
+/* Grid-Layout >= 1000px */
 @media screen and (min-width: 1000px) {
     .grid-2x2 {
         display: grid;

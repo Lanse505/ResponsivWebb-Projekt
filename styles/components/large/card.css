@@ -117,6 +117,32 @@ div.card--danger hr {
     padding: 0.5px;
 }
 
+div.card--danger .btn--red {
+    color: var(--white);
+}
+div.card--danger a.btn--red:hover {
+    text-decoration: none;
+    color: hsl(var(--hue-3), 50%, 50%);
+    background-color: var(--white);
+}
+div.card--success .btn--green {
+    color: var(--white);
+}
+div.card--success a.btn--green:hover {
+    text-decoration: none;
+    color: hsl(var(--hue-4), 50%, 50%);
+    background-color: var(--white);
+}
+div.card .btn--blue {
+    color: var(--white);
+}
+div.card a.btn--blue:hover {
+    text-decoration: none;
+    color: hsl(var(--hue-1), 50%, 50%);
+    background-color: var(--white);
+
+}
+
 /* Media Query >= 1000px */
 @media screen and (min-width:1000px){
    .card {

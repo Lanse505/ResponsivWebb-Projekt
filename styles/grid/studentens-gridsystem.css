@@ -1,12 +1,12 @@
-/* Grid-Layout >= 750px && <= 999px */
-@media screen and (min-width: 480px) and (max-width:849px) {
+/* Grid-Layout >= 768px && <= 1023px */
+@media screen and (min-width: 768px) and (max-width:1023px) {
     
 }
 
 
 
 /* Grid-Layout >= 1000px */
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1024px) {
     .grid-2x2 {
         display: grid;
         grid-template-columns: repeat(2, calc(100% / 2 - 1rem));

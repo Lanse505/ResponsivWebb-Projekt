@@ -3,8 +3,8 @@
     padding: 2rem;
     background: linear-gradient(180deg, hsl(var(--hue-3), 40%, 40%), hsl(var(--hue-1), 50%, 55%) );
     border-radius: 1rem 1rem 0 0;
-    margin-left: .5rem;
-    margin-right: .5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     margin-top: 20rem
     
 }
@@ -31,10 +31,18 @@
 .quote__fglayer{
     background: linear-gradient(150deg, hsl(var(--hue-1), 60%, 40%), hsl(var(--hue-1), 40%, 90%) );
     border-radius: 0 0 1rem 1rem;
-    margin-left: .5rem;
-    margin-right: .5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
-
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .quote__bglayer, .quote__fglayer {
+        width: 50%;
+    }
+    /* .quote {
+        display: flex;
+        align-items: center;
+    } */
+}
 
 
 

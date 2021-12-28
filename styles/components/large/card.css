@@ -31,9 +31,11 @@ div.card h2{
     padding-left: 0.5rem;
     color: var(--white);
     font-size: 3rem;
+    line-height: 3.5rem;
 }
 div.card .card__paragraph {
     color: var(--white);
+    font-weight: 600;
 }
 
 
@@ -143,6 +145,29 @@ div.card a.btn--blue:hover {
 
 }
 @media screen and (min-width: 768px) and (max-width:1023px) {
+    div.card {
+        width: 85%;
+    }
+    div.glass {
+        width: 85%;
+    }
+    div.card hr {
+        margin-top: 2rem;
+    }
+    div.card p {
+        width: 85%;
+    }
+    .flex--right {
+       margin-left: 15%;
+     
+      }
+     /* .card__heading  {
+         padding-top: 10rem;
+
+     } */
+     .card__title--p {
+         padding-top: 1rem;
+     }
 
 }
 

@@ -106,9 +106,9 @@
           </div>
         </div>
 
-        <div class="card card--danger">
+        <div class="card card--danger flex--right">
           <div class="card__heading">
-          <h2 class="card__title">A Web Designer</h2>
+          <h2 class="card__title  card__title--p">A Web Designer</h2>
           <p class="card__paragraph">with experience to boot</p>
         </div>
         <img class="btn--circle btn--red" src="./img/icons/globe.svg" alt="en jordglob med grid utseende">
@@ -120,7 +120,7 @@
 
         <div class="card card--success">
           <div class="card__heading">
-          <h2 class="card__title">Retoucher</h2>
+          <h2 class="card__title  card__title--p">Retoucher</h2>
           <p class="card__paragraph">high end customers</p>
         </div>
         <img class="btn--circle btn--green" src="./img/icons/wand.svg" alt="ett trollspö">
@@ -130,9 +130,9 @@
           <a class="btn btn--green" href="#">Read more</a>
         </div>
 
-        <div class="card">
+        <div class="card flex--right">
           <div class="card__heading">
-          <h2 class="card__title">Miscellaneous</h2>
+          <h2 class="card__title card__title--p">Miscellaneous</h2>
         </div>
         <img class="btn--circle btn--blue" src="./img/icons/miscellaneous.svg" alt="en cirkel med 3 små cirklar inuti">
           <p class="card__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates similique, repellat, rem itaque facilis inventore, commodi</p>
@@ -146,7 +146,7 @@
 
       </div>
     </section>
-    <section>
+    <section class="quote">
       <div class="quote__bglayer"></div>
       <img class="quote__img" src="./img/members/for_project/person_backup_1024.png" alt="en kvinna med en rosa huvtröja"
       srcset="
@@ -158,7 +158,14 @@
       ./img/members/for_project/person_2048.webp 2048w,
       ./img/members/for_project/person_4096.webp 4096w,
       "
-      sizes="35vw"
+      sizes=" (min-width: 1200px) 300px,
+              (min-width: 768px)  270px,
+              (min-width: 600px)  240px,
+              (min-width: 480px)  225px,
+              (min-width: 360px)  205px,
+             
+      35vw"
+     
        >
        <div class="quote__fglayer">
          <p class="quote__text">Continuous effort, not strength nor intelligence, is the key to unlocking our potential. </p>

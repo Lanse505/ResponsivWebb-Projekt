@@ -5,12 +5,13 @@
     border-radius: 1rem 1rem 0 0;
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-top: 20rem
+    margin-top: 20rem;
     
 }
 .quote__img {
     position: absolute;
-    transform: translate(0%, -100%);
+    bottom: 0;
+    left: -2%;
 
 }
 .quote__text {
@@ -37,11 +38,27 @@
 @media screen and (min-width: 768px) and (max-width:1023px) {
     .quote__bglayer, .quote__fglayer {
         width: 50%;
+        margin-left: 25%;
     }
-    /* .quote {
-        display: flex;
-        align-items: center;
-    } */
+   
+    .quote__text {
+        font-size: 100%;
+    }
+  
+}
+@media screen and (min-width:1024px){
+    .quote__bglayer, .quote__fglayer {
+        width: 50%;
+        margin-left: 25%;
+    }
+    .quote__bglayer {
+        margin-top: 25rem;
+
+    }
+     
+    .quote__text {
+        font-size: 125%;
+    }
 }
 
 

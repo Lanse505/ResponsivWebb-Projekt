@@ -39,8 +39,6 @@ div.card .card__paragraph {
 }
 
 
-
-
 /* Circle Icons */
 div.card .btn {
     width: 35%;
@@ -48,48 +46,42 @@ div.card .btn {
     float: right;
     margin-right: 1rem;
     text-transform: none;
+    color: var(--white);
 }
 
-div.card .btn--blue {
-    background-color: hsl(var(--hue-1), 50%, 50%)
-    
+div.card .btn:hover {
+    text-decoration: none;
+    color: hsl(var(--hue-1), 50%, 50%);
+    background-color: var(--white);
 }
-div.card .btn--red {
-    background-color: hsl(var(--hue-3), 50%, 50%)
-
-}
-div.card .btn--green {
-    background-color: hsl(var(--hue-4), 50%, 40%)
-}
-
 
 
 /* Overrides for Circle Icons*/
-div.card--success .btn--blue {
-    background-color: hsl(var(--hue-4), 50%, 40%)
-}
-div.card .btn {
+div.card .btn, 
+div.card .btn--circle {
     background-color: hsl(var(--hue-1), 50%, 50%)
 }
-div.card--danger .btn {
+div.card--danger .btn,
+div.card--danger .btn--circle {
     background-color: hsl(var(--hue-3), 50%, 50%)
 }
 
-div.card--success .btn {
+div.card--success .btn,
+div.card--success .btn--circle {
     background-color: hsl(var(--hue-4), 50%, 40%)
 }
-div.card--success .btn--red {
-    background-color: hsl(var(--hue-4), 50%, 40%)
+
+div.card--danger .btn:hover {
+    text-decoration: none;
+    color: hsl(var(--hue-3), 50%, 50%);
+    background-color: var(--white);
 }
 
-div.card--danger .btn--blue {
-    background-color: hsl(var(--hue-3), 50%, 50%)
+div.card--success .btn:hover {
+    text-decoration: none;
+    color: hsl(var(--hue-4), 50%, 50%);
+    background-color: var(--white);
 }
-
-div.card--danger .btn--green {
-    background-color: hsl(var(--hue-3), 50%, 50%)
-}
-
 
 
 /* Card Headings */
@@ -98,12 +90,12 @@ div.card div.card__heading {
 }
 
 /* Overrides for Card Headings */
-div.card--success div.card__heading {
-    background: linear-gradient(150deg, hsl(var(--hue-4), 60%, 30%), hsl(var(--hue-4), 40%, 60%) ) !important;
+div.card.card--success div.card__heading {
+    background: linear-gradient(150deg, hsl(var(--hue-4), 60%, 30%), hsl(var(--hue-4), 40%, 60%) );
 }
 
-div.card--danger div.card__heading {
-    background: linear-gradient(150deg, hsl(var(--hue-3), 60%, 30%), hsl(var(--hue-3), 40%, 60%) ) !important;
+div.card.card--danger div.card__heading {
+    background: linear-gradient(150deg, hsl(var(--hue-3), 60%, 30%), hsl(var(--hue-3), 40%, 60%) );
 }
 /*line colour */
 div.card hr {
@@ -119,31 +111,6 @@ div.card--danger hr {
     padding: 0.5px;
 }
 
-div.card--danger .btn--red {
-    color: var(--white);
-}
-div.card--danger a.btn--red:hover {
-    text-decoration: none;
-    color: hsl(var(--hue-3), 50%, 50%);
-    background-color: var(--white);
-}
-div.card--success .btn--green {
-    color: var(--white);
-}
-div.card--success a.btn--green:hover {
-    text-decoration: none;
-    color: hsl(var(--hue-4), 50%, 50%);
-    background-color: var(--white);
-}
-div.card .btn--blue {
-    color: var(--white);
-}
-div.card a.btn--blue:hover {
-    text-decoration: none;
-    color: hsl(var(--hue-1), 50%, 50%);
-    background-color: var(--white);
-
-}
 @media screen and (min-width: 768px) and (max-width:1023px) {
     div.card {
         width: 85%;

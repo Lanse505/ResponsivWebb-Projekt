@@ -3,16 +3,12 @@
     padding: 2rem;
     background: linear-gradient(150deg, hsl(var(--hue-3), 40%, 40%), hsl(var(--hue-3), 50%, 40%) );
     border-radius: 1rem 1rem 0 0;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-top: 20rem;
-    
+    margin: 20rem 1rem 0 1rem;
 }
 .quote__img {
     position: absolute;
     bottom: 0;
     left: -2%;
-
 }
 .quote__text {
     font-weight: 300;
@@ -47,7 +43,7 @@
         font-size: 120%;
     }
     .quote__author{
-        font-size: 1rem;
+        font-size: 100%;
     }
 
     .quote__bglayer{
@@ -68,7 +64,6 @@
     }
     .quote__bglayer {
         margin-top: 25rem;
-
     }
      
     .quote__text {

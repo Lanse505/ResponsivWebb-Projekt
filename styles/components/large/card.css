@@ -1,163 +1,162 @@
 /* Default Classes */
-.card{
-    margin: 2rem 0;
-    background-color: hsla( var(--white-hue), 100%, 96%, 0.85);
-    border-radius: 1rem;
-    overflow: hidden;
-    position: relative;
+.card {
+  margin: 2rem 0;
+  background-color: hsla(var(--white-hue), 100%, 96%, 0.85);
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card__heading {
-    padding: 3rem 0 1rem 1rem;
+  padding: 3rem 1rem 1rem 1rem;
 }
+
+.card__body {
+  position: relative;
+  padding: 1rem;
+  flex: 1;
+}
+
+.card__footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card__title {
+  padding-top: 1rem;
+}
+
 .card__text {
-    padding-top: 3rem;
-    padding-bottom: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
+
 .btn--circle {
-    position: absolute;
-    transform: translate(-30%, -50%);
-    right: 0;
+  position: absolute;
+  transform: translate(-30%, -50%);
+  right: 0;
+  top: 0;
 }
 
 .card__button {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
-div.card p {
-    padding-left: 0.5rem;
-}
-div.card h2{
-    padding-left: 0.5rem;
-    color: var(--white);
-    font-size: 3rem;
-    line-height: 3.5rem;
-    
+div.card h2 {
+  color: var(--white);
+  font-size: 3rem;
+  line-height: 3.5rem;
 }
 div.card .card__paragraph {
-    color: var(--white);
-    font-weight: 600;
+  color: var(--white);
+  font-weight: 600;
 }
 
-
-/* Circle Icons */
 div.card .btn {
-    width: 35%;
-    margin-bottom: 1rem;
-    float: right;
-    margin-right: 1rem;
-    text-transform: none;
-    color: var(--white);
+  width: 35%;
+  text-transform: none;
+  color: var(--white);
 }
 
 div.card .btn:hover {
-    text-decoration: none;
-    color: hsl(var(--hue-1), 50%, 50%);
-    background-color: var(--white);
+  text-decoration: none;
+  color: hsl(var(--hue-1), 50%, 50%);
+  background-color: var(--white);
 }
 
-
 /* Overrides for Circle Icons*/
-div.card .btn, 
+div.card .btn,
 div.card .btn--circle {
-    background-color: hsl(var(--hue-1), 50%, 50%)
+  background-color: hsl(var(--hue-1), 50%, 50%);
 }
 div.card--danger .btn,
 div.card--danger .btn--circle {
-    background-color: hsl(var(--hue-3), 50%, 50%)
+  background-color: hsl(var(--hue-3), 50%, 50%);
 }
 
 div.card--success .btn,
 div.card--success .btn--circle {
-    background-color: hsl(var(--hue-4), 50%, 40%)
+  background-color: hsl(var(--hue-4), 50%, 40%);
 }
 
 div.card--danger .btn:hover {
-    text-decoration: none;
-    color: hsl(var(--hue-3), 50%, 50%);
-    background-color: var(--white);
+  text-decoration: none;
+  color: hsl(var(--hue-3), 50%, 50%);
+  background-color: var(--white);
 }
 
 div.card--success .btn:hover {
-    text-decoration: none;
-    color: hsl(var(--hue-4), 50%, 50%);
-    background-color: var(--white);
+  text-decoration: none;
+  color: hsl(var(--hue-4), 50%, 50%);
+  background-color: var(--white);
 }
-
 
 /* Card Headings */
 div.card div.card__heading {
-    background: linear-gradient(150deg, hsl(var(--hue-1), 60%, 30%), hsl(var(--hue-1), 40%, 60%) );
+  background: linear-gradient(
+    150deg,
+    hsl(var(--hue-1), 60%, 30%),
+    hsl(var(--hue-1), 40%, 60%)
+  );
 }
 
 /* Overrides for Card Headings */
 div.card.card--success div.card__heading {
-    background: linear-gradient(150deg, hsl(var(--hue-4), 60%, 30%), hsl(var(--hue-4), 40%, 60%) );
+  background: linear-gradient(
+    150deg,
+    hsl(var(--hue-4), 60%, 30%),
+    hsl(var(--hue-4), 40%, 60%)
+  );
 }
 
 div.card.card--danger div.card__heading {
-    background: linear-gradient(150deg, hsl(var(--hue-3), 60%, 30%), hsl(var(--hue-3), 40%, 60%) );
+  background: linear-gradient(
+    150deg,
+    hsl(var(--hue-3), 60%, 30%),
+    hsl(var(--hue-3), 40%, 60%)
+  );
 }
+
 /*line colour */
-div.card hr {
-    background-color: hsl(var(--hue-1), 50%, 50%);
-    padding: 0.5px;
+div.card__footer {
+  border-top: 3px solid hsl(var(--hue-1), 50%, 50%);
 }
-div.card--success hr {
-    background-color: hsl(var(--hue-4), 50%, 50%);
-    padding: 0.5px;
+div.card--success .card__footer {
+  border-top: 3px solid hsl(var(--hue-4), 50%, 50%);
 }
-div.card--danger hr {
-    background-color: hsl(var(--hue-3), 50%, 50%);
-    padding: 0.5px;
+div.card--danger .card__footer {
+  border-top: 3px solid hsl(var(--hue-3), 50%, 50%);
 }
 
-@media screen and (min-width: 768px) and (max-width:1023px) {
-    div.card {
-        width: 85%;
-    }
-    div.glass {
-        width: 85%;
-    }
-    div.card hr {
-        margin-top: 2rem;
-    }
-    div.card p {
-        width: 85%;
-    }
-    .flex--right {
-       margin-left: 15%;
-     
-      }
-    
-     .card__title--p {
-         padding-top: 1rem;
-     }
-     div.card .btn {
-         width: 25%;
-     }
-
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  div.card {
+    width: 85%;
+  }
+  div.glass {
+    width: 85%;
+  }
+  div.card p {
+    width: 85%;
+  }
+  .flex--right {
+    margin-left: 15%;
+  }
+  div.card .btn {
+    width: 25%;
+  }
 }
 
 /* Media Query >= 1000px */
-@media screen and (min-width:1024px){
-   .card {
-       margin: 0 0;
-   }
-   .card p {
-       width: 85%;
-       margin-left: 1rem;
-   }
- hr {
-     margin-top: 3rem;
- }
- .card__text--first {
-     margin-top: 4.2rem;
-     margin-bottom: 1rem;
-     
-
- }
- .card__text--second {
-     margin-bottom: 4.2rem;
- }
+@media screen and (min-width: 1024px) {
+  .card {
+    margin: 0 0;
+  }
+  .card__body p {
+    width: 95%;
+  }
 }

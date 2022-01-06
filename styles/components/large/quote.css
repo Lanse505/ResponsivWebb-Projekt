@@ -9,6 +9,7 @@
     position: absolute;
     bottom: 0;
     left: -2%;
+    width: 50%;
 }
 .quote__text {
     font-weight: 300;
@@ -31,12 +32,21 @@
     border-radius: 0 0 1rem 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    
+}
+
+@media screen and (min-width: 550px) and (max-width: 767px) {
+    .quote__img {
+        width: 37%;
+    }
 }
 @media screen and (min-width: 768px) and (max-width:1023px) {
     .quote__bglayer, .quote__fglayer {
         width: 50%;
         margin-left: 25%;
+    }
+
+    .quote__img {
+        width: 50%;
     }
    
     .quote__text {
@@ -64,6 +74,10 @@
     }
     .quote__bglayer {
         margin-top: 25rem;
+    }
+
+    .quote__img {
+        width: 50%;
     }
      
     .quote__text {

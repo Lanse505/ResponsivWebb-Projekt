@@ -10,93 +10,99 @@
   justify-content: space-between;
 }
 
-.card__heading {
+section.card .card__heading {
   padding: 3rem 1rem 1rem 1rem;
 }
 
-.card__body {
+section.card .card__body {
   position: relative;
   padding: 3rem 1rem 1rem 1rem;
   flex: 1;
 }
 
-.card__footer {
+section.card .card__footer {
   margin-top: 2rem;
   padding: 1rem;
   display: flex;
   justify-content: flex-end;
 }
 
-.card__title {
+section.card .card__title {
   padding-top: 1rem;
 }
 
-.card__text {
+section.card .card__text {
   padding-top: 1rem;
 }
 
-div.card .btn--circle {
+section.card .btn--circle {
   position: absolute;
   transform: translate(-30%, -50%);
   right: 0;
   top: 0;
 }
 
-.card__button {
+section.card .card__button {
   text-transform: capitalize;
 }
 
-div.card h2 {
+section.card .btn--circle {
+  width: 5rem;
+  height: 5rem;
+  padding: 0.5rem;
+}
+
+section.card h2 {
   color: var(--white);
   font-size: 3rem;
   line-height: 3.5rem;
 }
-div.card .card__paragraph {
+section.card .card__paragraph {
   color: var(--white);
   font-weight: 600;
 }
 
-div.card .btn {
+section.card .btn {
   width: 35%;
   text-transform: none;
   color: var(--white);
 }
 
-div.card .btn:hover {
+section.card .btn:hover {
   text-decoration: none;
   color: hsl(var(--hue-1), 50%, 50%);
   background-color: var(--white);
 }
 
 /* Overrides for Circle Icons*/
-div.card .btn,
-div.card .btn--circle {
+section.card .btn,
+section.card .btn--circle {
   background-color: hsl(var(--hue-1), 50%, 50%);
 }
-div.card--danger .btn,
-div.card--danger .btn--circle {
+section.card--danger .btn,
+section.card--danger .btn--circle {
   background-color: hsl(var(--hue-3), 50%, 50%);
 }
 
-div.card--success .btn,
-div.card--success .btn--circle {
+section.card--success .btn,
+section.card--success .btn--circle {
   background-color: hsl(var(--hue-4), 50%, 40%);
 }
 
-div.card--danger .btn:hover {
+section.card--danger .btn:hover {
   text-decoration: none;
   color: hsl(var(--hue-3), 50%, 50%);
   background-color: var(--white);
 }
 
-div.card--success .btn:hover {
+section.card--success .btn:hover {
   text-decoration: none;
   color: hsl(var(--hue-4), 50%, 50%);
   background-color: var(--white);
 }
 
 /* Card Headings */
-div.card div.card__heading {
+section.card header.card__heading {
   background: linear-gradient(
     150deg,
     hsl(var(--hue-1), 60%, 30%),
@@ -105,7 +111,7 @@ div.card div.card__heading {
 }
 
 /* Overrides for Card Headings */
-div.card.card--success div.card__heading {
+section.card.card--success header.card__heading {
   background: linear-gradient(
     150deg,
     hsl(var(--hue-4), 60%, 30%),
@@ -113,7 +119,7 @@ div.card.card--success div.card__heading {
   );
 }
 
-div.card.card--danger div.card__heading {
+section.card.card--danger header.card__heading {
   background: linear-gradient(
     150deg,
     hsl(var(--hue-3), 60%, 30%),
@@ -122,30 +128,30 @@ div.card.card--danger div.card__heading {
 }
 
 /*line colour */
-div.card__footer {
+footer.card__footer {
   border-top: 3px solid hsl(var(--hue-1), 50%, 50%);
 }
-div.card--success .card__footer {
+section.card--success .card__footer {
   border-top: 3px solid hsl(var(--hue-4), 50%, 50%);
 }
-div.card--danger .card__footer {
+section.card--danger .card__footer {
   border-top: 3px solid hsl(var(--hue-3), 50%, 50%);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  div.card {
+  section.card {
     width: 85%;
   }
   div.glass {
     width: 85%;
   }
-  div.card p {
+  section.card p {
     width: 80%;
   }
   .card__flex--right {
     margin-left: 15%;
   }
-  div.card .btn {
+  section.card .btn {
     width: 25%;
   }
 }

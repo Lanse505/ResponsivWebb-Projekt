@@ -100,51 +100,51 @@
     <section
       class="container container--bg-sea-spray container--bg-blur-4 container--bg-success-gradient container--bg-blend-color container--skew-left">
       <h2 class="container__heading container__heading--border-bottom container__heading--padding-right">Skills</h2>
-      <div class="grid-2x2">
-        <div class="glass">
+      <div class="grid-container__card">
+        <div class="glass grid__content">
           <div class="progress">
           </div>
         </div>
 
-        <section class="card card--danger card__flex--right">
+        <section class="card card--danger grid__content">
           <header class="card__heading">
             <h2 class="card__title">A Web Designer</h2>
             <p class="card__paragraph">with experience to boot</p>
+            <img class="btn btn--circle" src="./img/icons/globe.svg" alt="en jordglob med grid utseende">
           </header>
-          <section class="card__body">
-            <img class="btn--circle" src="./img/icons/globe.svg" alt="en jordglob med grid utseende">
-            <p class="card__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates similique, repellat, rem itaque facilis inventore, commodi</p>
-            <p class="card__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates similique, repellat, rem itaque facilis inventore, commodi</p>
-          </section>
+          <div class="card__body">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates similique, repellat, rem itaque facilis inventore, commodi</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates similique, repellat, rem itaque facilis inventore, commodi</p>
+          </div>
           <footer class="card__footer">
             <a class="btn" href="#">Read more</a>
           </footer>
         </section>
 
-        <section class="card card--success">
+        <section class="card card--success grid__content">
           <header class="card__heading">
             <h2 class="card__title">Retoucher</h2>
             <p class="card__paragraph">high end customers</p>
+            <img class="btn btn--circle" src="./img/icons/wand.svg" alt="ett trollspö">
           </header>
-          <section class="card__body">
-            <img class="btn--circle" src="./img/icons/wand.svg" alt="ett trollspö">
-            <p class="card__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates similique, repellat, rem itaque facilis inventore, commodi</p>
-            <p class="card__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates similique, repellat, rem itaque facilis inventore, commodi</p>
-          </section>
+          <div class="card__body">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates similique, repellat, rem itaque facilis inventore, commodi</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates similique, repellat, rem itaque facilis inventore, commodi</p>
+          </div>
           <footer class="card__footer">
             <a class="btn" href="#">Read more</a>
           </footer>
         </section>
 
-        <section class="card card__flex--right">
+        <section class="card grid__content">
           <header class="card__heading">
             <h2 class="card__title">Miscellaneous</h2>
+            <img class="btn btn--circle" src="./img/icons/miscellaneous.svg" alt="en cirkel med 3 små cirklar inuti">
           </header>
-          <section class="card__body">
-            <img class="btn--circle" src="./img/icons/miscellaneous.svg" alt="en cirkel med 3 små cirklar inuti">
-            <p class="card__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates similique, repellat, rem itaque facilis inventore, commodi</p>
-            <p class="card__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates similique, repellat, rem itaque facilis inventore, commodi</p>
-          </section>
+          <div class="card__body">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates similique, repellat, rem itaque facilis inventore, commodi</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates similique, repellat, rem itaque facilis inventore, commodi</p>
+          </div>
           <footer class="card__footer">
             <a class="btn" href="#">Read more</a>
           </footer>
@@ -155,8 +155,8 @@
 
       </div>
     </section>
-    <section class="quote">
-      <div class="quote__bglayer">
+    <section class="quote grid-container__quote">
+      <figure class="quote__bglayer">
         <img class="quote__img" src="./img/members/for_project/person_backup_1024.png" alt="en kvinna med en rosa huvtröja"
         srcset="
         ./img/members/for_project/person_512.webp 512w,
@@ -164,15 +164,19 @@
         ./img/members/for_project/person_1024.webp 1024w,
         "
         sizes=" 
-                (min-width: 1024px) 1024px,
-                (min-width: 768px) 768px,
-                (min-width: 360px) 360px,
+                (min-width: 1024px) 60vw,
+                (min-width: 768px) 45vw,
+                (min-width: 360px) 30vw,
         15vw">
-      </div>
-      <div class="quote__fglayer">
-        <p class="quote__text">"Continuous effort, not strength nor intelligence, is the key to unlocking our potential." </p>
-        <p class="quote__author">— Winston Churchill</p>
-      </div>
+      </figure>
+      <figure class="quote__fglayer">
+        <blockquote class="quote__text">
+          "Continuous effort, not strength nor intelligence, is the key to unlocking our potential." 
+        </blockquote>
+        <figcaption class="quote__author">
+          — Winston Churchill
+        </figcaption>
+      </figure>
     </section>
    
 

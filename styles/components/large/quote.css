@@ -69,8 +69,8 @@
 }
 @media screen and (min-width:1024px){
     .quote__bglayer, .quote__fglayer {
-        width: 50%;
-        margin-left: 25%;
+        width: clamp(35vw, 50%, 65vw);
+        margin: auto;
     }
     .quote__bglayer {
         margin-top: 25rem;

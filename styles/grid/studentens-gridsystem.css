@@ -1,22 +1,37 @@
+.grid-container__card {
+    display: grid;
+    gap: 5vw;
+}
+
+.grid-container__quote {
+    grid-template-columns: calc(4, 1fr);
+}
+
+
 /* Grid-Layout >= 768px && <= 1023px */
 @media screen and (min-width: 768px) and (max-width:1023px) {
-    
+    .grid-container__card {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3vw;
+    }
+
+    .grid__content:nth-child(odd) {
+        grid-column: 1 / 4;
+    }
+
+    .grid__content:nth-child(even) {
+        grid-column: 2 / 5;
+    }
 }
 
 
 
 /* Grid-Layout >= 1000px */
 @media screen and (min-width: 1024px) {
-    .grid-2x2 {
-        display: grid;
+    .grid-container__card {
         grid-template-columns: repeat(2, calc(100% / 2 - 1rem));
         grid-template-rows: repeat(2, calc(100% / 2 - 1rem));
-        grid-gap: 1rem;
-        grid-template-areas: 
-          "first second"
-          "third fourth"
+        grid-gap: 1rem;    
     }
-    
-    
 }
 
